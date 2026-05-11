@@ -1,112 +1,229 @@
-Format: Group Project (3–4 students per team) 
-1. General Description 
-The final project is a comprehensive team-based assignment aimed at demonstrating 
-students’ ability to design and implement a non-trivial Python application. 
-The project must reflect not only correct usage of Python syntax, but also a deeper 
-understanding of: 
-• problem-solving and algorithm design 
-• efficient use of data structures 
-• internal behavior of Python (e.g., iteration, generators vs lists, memory considerations) 
-• modular and maintainable code design 
-Students are expected to apply knowledge from the entire course, including collections, 
-file handling, functions, OOP, modules, and testing. 
-The project should simulate a real-world problem and provide a complete working 
-solution. 
-2. Team Structure and Contribution 
-• Teams consist of 4 students (exception: 3 students if there’s no more students left). 
-• Work must be distributed evenly across all members. 
-• Each student must contribute meaningful code and participate in design and testing. 
-Contribution Requirements 
-• The project must be submitted via GitHub repository 
-• Commit history must clearly show individual contributions 
-• Projects with: 
-▪️ only 1–2 active contributors 
-▪️ or very few commits (e.g., one final commit) 
-will receive a significant penalty 
-3. Technical Requirements 
-The project must include all of the following: 
-3.1 Core Programming Concepts 
-• Functions (with arguments and return values) 
-• Control flow (conditions and loops) 
-• Error handling (exceptions where appropriate) 
-3.2 Object-Oriented Programming 
-• At least 3–5 classes 
-• Use of: 
-o encapsulation 
-o inheritance 
-o polymorphism 
-Example: 
-A User base class with derived classes such as Admin, Customer. 
-3.3 Collections and Data Structures 
-Use multiple types: 
-• lists 
-• dictionaries 
-• tuples 
-• sets (if applicable) 
-Students must justify their choice of data structures. 
-Example: 
-Using a dictionary for fast lookup instead of iterating over a list. 
-3.4 File Handling 
-• Read from and write to files 
-• Use at least one structured format: 
-o CSV or JSON 
-3.5 Modules and Project Structure 
-• Code must be split into multiple Python files (modules) 
-• Logical structure (e.g. models/, services/, utils/) 
-3.6 Testing 
-• Use basic unit testing: 
-o assert 
-o or unittest 
-Example: 
-• Testing correct output of a function 
-• Testing edge cases (empty input, invalid data) 
-3.7 Algorithms and Efficiency 
-Students must: 
-• Avoid inefficient solutions when better ones exist 
-• Justify key decisions 
-Example: 
-Using dictionary lookup instead of nested loops (O(n²) → O(n)) 
-3.8 Advanced Python Features (at least 1–2) 
-• generators / iterators 
-• decorators 
-• lambda / map / filter 
-• regular expressions 
-4. Non-Functional Requirements 
-• Code must be: 
-o readable 
-o well-structured 
-o maintainable 
-• Use meaningful variable and function names 
-• Avoid code duplication 
-• Add comments where necessary 
-5. Deliverables 
-5.1 GitHub Repository 
-Must include: 
-• full source code 
-• commit history 
-• README file: 
-o project description 
-o how to run the project 
-o team members 
-5.2 Presentation (5–10 slides) 
-Must include: 
-• problem description 
-• system design 
-• demo of the program 
-• team contribution breakdown 
-• discussion of key decisions: 
-o complex parts 
-o interesting solutions 
-o optimizations 
-5.3 Code Defense 
-Each student must: 
-• explain their part of the code 
-• answer questions about implementation and design 
-6. Evaluation Criteria (Summary) 
-• Functionality and correctness 
-• Code quality and structure 
-• Use of required concepts 
-• Algorithmic efficiency 
-• Testing 
-• Team contribution 
-• Presentation and defense
+Game Statistics Analyzer — Project Requirements
+
+Project Overview
+The Game Statistics Analyzer is a team-based Python application designed to analyze player performance and game statistics. The system simulates a real-world analytics platform where users can store match results, generate leaderboards, analyze player performance, and export reports.
+
+The project demonstrates practical usage of Python programming concepts, including object-oriented programming, data structures, file handling, algorithms, modular design, and testing.
+
+--------------------------------------------------
+Core Functionalities
+--------------------------------------------------
+
+• Store player statistics
+• Generate leaderboards
+• Calculate average player scores
+• Analyze daily and overall performance
+• Export reports to CSV/JSON
+• Validate user and file input
+• Search and filter statistics
+
+Example Input:
+[
+    {
+        "player": "Alice",
+        "score": 120,
+        "date": "2026-01-01"
+    },
+    {
+        "player": "Bob",
+        "score": 150,
+        "date": "2026-01-01"
+    }
+]
+
+--------------------------------------------------
+Technical Requirements
+--------------------------------------------------
+
+1. Core Programming Concepts
+The project must include:
+• functions with arguments and return values
+• loops and conditions
+• exception handling
+• modular and reusable code
+
+2. Object-Oriented Programming
+The application must include:
+• 3–5 classes minimum
+• encapsulation
+• inheritance
+• polymorphism
+
+Main classes:
+• Person
+• Player
+• Match
+• Leaderboard
+• AnalyticsEngine
+
+3. Collections and Data Structures
+The project uses:
+• lists
+• dictionaries
+• tuples
+• sets (where applicable)
+
+Data structures must be selected efficiently.
+Example:
+Using dictionaries for O(1) lookups instead of nested loops.
+
+4. File Handling
+The system must:
+• read and write files
+• support JSON and CSV formats
+• handle invalid or missing files correctly
+
+5. Project Structure
+The codebase must be split into modules and folders.
+
+Suggested structure:
+
+game_statistics_analyzer/
+│
+├── data/
+├── models/
+├── services/
+├── utils/
+├── tests/
+├── main.py
+└── README.md
+
+6. Testing
+The project must include:
+• assert or unittest testing
+• edge case testing
+• validation testing
+
+Examples:
+• empty input
+• invalid dates
+• negative scores
+
+7. Algorithms and Efficiency
+The application should avoid inefficient algorithms.
+
+Required:
+• efficient sorting
+• dictionary-based lookup
+• optimized data processing
+
+Example:
+O(1) dictionary lookup instead of O(n²) nested iteration.
+
+8. Advanced Python Features
+The project must include at least 1–2 advanced Python concepts:
+• generators / iterators
+• decorators
+• lambda / map / filter
+• regular expressions
+
+--------------------------------------------------
+Non-Functional Requirements
+--------------------------------------------------
+
+The code must be:
+• readable
+• maintainable
+• modular
+• well-commented
+
+Additionally:
+• meaningful variable names must be used
+• duplicated logic should be avoided
+
+--------------------------------------------------
+Team Contribution
+--------------------------------------------------
+
+The project is developed by a team of 4 students.
+
+Student Responsibilities:
+
+Student 1:
+• OOP architecture
+• models and inheritance
+• core class structure
+
+Student 2:
+• analytics algorithms
+• rankings
+• statistics calculations
+• optimization
+
+Student 3:
+• file handling
+• validation
+• decorators and regex
+• exception handling
+
+Student 4:
+• CLI interface
+• testing
+• README documentation
+• presentation integration
+
+Each student must:
+• contribute meaningful code
+• make regular commits
+• participate in testing and debugging
+
+--------------------------------------------------
+GitHub Requirements
+--------------------------------------------------
+
+The repository must include:
+• full source code
+• commit history
+• README.md
+• project structure
+• instructions to run the application
+
+Low activity or only one contributor may result in penalties.
+
+--------------------------------------------------
+Presentation Requirements
+--------------------------------------------------
+
+The final presentation must include:
+• project description
+• system architecture
+• demonstration
+• optimization discussion
+• team contribution breakdown
+• testing overview
+
+Recommended Presentation Structure:
+1. Introduction
+2. System Design
+3. OOP Architecture
+4. Algorithms & Analytics
+5. File Handling & Validation
+6. Testing & CLI
+7. Demo
+8. Conclusion
+
+--------------------------------------------------
+Evaluation Criteria
+--------------------------------------------------
+
+The project will be evaluated based on:
+• functionality
+• code quality
+• architecture
+• efficiency
+• testing
+• team contribution
+• presentation quality
+• code defense
+
+--------------------------------------------------
+Future Improvements
+--------------------------------------------------
+
+Possible future upgrades:
+• SQLite database integration
+• graphical interface
+• Flask REST API
+• real-time analytics
+• graph visualization
+• multiplayer comparison system
