@@ -14,21 +14,22 @@ def main():
         show_menu()
         choice = input("Choose option: ")
 
-        if choice == "1":
-            print("Leaderboard feature will be connected later.")
-        elif choice == "2":
-            print("Average score feature will be connected later.")
-        elif choice == "3":
-            print("Best performance feature will be connected later.")
-        elif choice == "4":
-            print("Export report feature will be connected later.")
-        elif choice == "5":
-            print("Tests will be connected later.")
-        elif choice == "0":
-            print("Exit program.")
-            break
-        else:
-            print("Invalid option. Try again.")
+        match choice:
+            case "1":
+                print("Leaderboard feature will be connected later.")
+            case "2":
+                print("Average score feature will be connected later.")
+            case "3":
+                print("Best performance feature will be connected later.")
+            case "4":
+                print("Export report feature will be connected later.")
+            case "5":
+                print("Tests will be connected later.")
+            case "0":
+                print("Exit program.")
+                break
+            case _:
+                print("Invalid option. Try again.")
 
 
 if __name__ == "__main__":
