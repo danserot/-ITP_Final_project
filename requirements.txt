@@ -1,0 +1,112 @@
+Format: Group Project (3–4 students per team) 
+1. General Description 
+The final project is a comprehensive team-based assignment aimed at demonstrating 
+students’ ability to design and implement a non-trivial Python application. 
+The project must reflect not only correct usage of Python syntax, but also a deeper 
+understanding of: 
+• problem-solving and algorithm design 
+• efficient use of data structures 
+• internal behavior of Python (e.g., iteration, generators vs lists, memory considerations) 
+• modular and maintainable code design 
+Students are expected to apply knowledge from the entire course, including collections, 
+file handling, functions, OOP, modules, and testing. 
+The project should simulate a real-world problem and provide a complete working 
+solution. 
+2. Team Structure and Contribution 
+• Teams consist of 4 students (exception: 3 students if there’s no more students left). 
+• Work must be distributed evenly across all members. 
+• Each student must contribute meaningful code and participate in design and testing. 
+Contribution Requirements 
+• The project must be submitted via GitHub repository 
+• Commit history must clearly show individual contributions 
+• Projects with: 
+▪️ only 1–2 active contributors 
+▪️ or very few commits (e.g., one final commit) 
+will receive a significant penalty 
+3. Technical Requirements 
+The project must include all of the following: 
+3.1 Core Programming Concepts 
+• Functions (with arguments and return values) 
+• Control flow (conditions and loops) 
+• Error handling (exceptions where appropriate) 
+3.2 Object-Oriented Programming 
+• At least 3–5 classes 
+• Use of: 
+o encapsulation 
+o inheritance 
+o polymorphism 
+Example: 
+A User base class with derived classes such as Admin, Customer. 
+3.3 Collections and Data Structures 
+Use multiple types: 
+• lists 
+• dictionaries 
+• tuples 
+• sets (if applicable) 
+Students must justify their choice of data structures. 
+Example: 
+Using a dictionary for fast lookup instead of iterating over a list. 
+3.4 File Handling 
+• Read from and write to files 
+• Use at least one structured format: 
+o CSV or JSON 
+3.5 Modules and Project Structure 
+• Code must be split into multiple Python files (modules) 
+• Logical structure (e.g. models/, services/, utils/) 
+3.6 Testing 
+• Use basic unit testing: 
+o assert 
+o or unittest 
+Example: 
+• Testing correct output of a function 
+• Testing edge cases (empty input, invalid data) 
+3.7 Algorithms and Efficiency 
+Students must: 
+• Avoid inefficient solutions when better ones exist 
+• Justify key decisions 
+Example: 
+Using dictionary lookup instead of nested loops (O(n²) → O(n)) 
+3.8 Advanced Python Features (at least 1–2) 
+• generators / iterators 
+• decorators 
+• lambda / map / filter 
+• regular expressions 
+4. Non-Functional Requirements 
+• Code must be: 
+o readable 
+o well-structured 
+o maintainable 
+• Use meaningful variable and function names 
+• Avoid code duplication 
+• Add comments where necessary 
+5. Deliverables 
+5.1 GitHub Repository 
+Must include: 
+• full source code 
+• commit history 
+• README file: 
+o project description 
+o how to run the project 
+o team members 
+5.2 Presentation (5–10 slides) 
+Must include: 
+• problem description 
+• system design 
+• demo of the program 
+• team contribution breakdown 
+• discussion of key decisions: 
+o complex parts 
+o interesting solutions 
+o optimizations 
+5.3 Code Defense 
+Each student must: 
+• explain their part of the code 
+• answer questions about implementation and design 
+6. Evaluation Criteria (Summary) 
+• Functionality and correctness 
+• Code quality and structure 
+• Use of required concepts 
+• Algorithmic efficiency 
+• Testing 
+• Team contribution 
+• Presentation and defense
