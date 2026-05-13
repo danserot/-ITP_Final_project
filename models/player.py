@@ -1,25 +1,19 @@
 from datetime import datetime
 
 class BaseEntity:
-
     def __init__(self, name: str):
         self._name = name      
         self._created_at = datetime.now()
-
     @property
     def name(self) -> str:
         return self._name
-
     @name.setter
     def name(self, value: str):
-
         if not value or not isinstance(value, str):
             raise ValueError("Name must be a non-empty string")
         self._name = value.strip()
-
     def __repr__(self) -> str:
         return f"{self.__class__.__name__}(name={self._name!r})"
-
 
 class Player(BaseEntity):
     def __init__(self, name: str):
@@ -78,7 +72,6 @@ class Player(BaseEntity):
             datetime.strptime(date, "%Y-%m-%d")
         except ValueError:
             raise ValueError(f"Date must be in YYYY-MM-DD format, got: {date!r}")
-
     def __str__(self) -> str:
         return (
             f"Player: {self._name} | "
