@@ -9,3 +9,9 @@ def validate_positive_number(value):
     except ValueError:
         return False
 
+def validate_score(score):
+    try:
+        score = int(score)
+        return score >= 0
+    except ValueError:
+        return False    
